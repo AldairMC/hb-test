@@ -4,7 +4,7 @@
     display: grid;
     grid-template-rows: 10% 60% 30%;
     row-gap: 25px;
-    margin: 30px 10% 0 10%;
+    margin: 50px 10% 0 10%;
     position: sticky;
     top: 0;
     height: 100vh;
@@ -14,10 +14,6 @@
         grid-template-rows: 100%;
         grid-template-columns: repeat(2, 1fr);
 
-        .Div_Logo {
-            background-color: rebeccapurple;
-        }
-
         .Div_Modal {
             background-color: blue;
         }
@@ -26,7 +22,7 @@
     .Div_Info_Resumen {
         display: grid;
         grid-template-rows: 100%;
-        grid-template-columns: 75% 20%;
+        grid-template-columns: 65% 30%;
         column-gap: 5%;
 
         .Div_Info {

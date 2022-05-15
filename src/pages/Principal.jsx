@@ -1,13 +1,13 @@
 import React from 'react'
-import { BrowserRouter, Routes, Route } from 'react-router-dom';
+
+// Components
+import Logo from '../components/Logo';
 
 const Principal = () => {
   return (
     <div className='Div_Principal'>
         <div className='Div_Navbar'>
-            <div className='Div_Logo'>
-                From Logo
-            </div>
+            <Logo />
             <div className='Div_Modal'>
                 From Modal Active
             </div>

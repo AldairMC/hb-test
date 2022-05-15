@@ -1,0 +1,10 @@
+.Logo {
+    display: grid;
+    grid-template-columns: 100%;
+
+    .Img_Logo {
+        justify-self: flex-start;
+        align-self: center;
+        padding-left: 20px;
+    }
+}

@@ -14,9 +14,9 @@ const Stepper = () => {
                 Links.map((info) => (
                     <div className='Options'>
                         {
-                            <Link to={info.path} className={`${(data[info.nameState] === "")?"__empty_title" : "__full_title"}`}>
+                            <Link to={info.path} className={`${!(data[info.nameState])?"__empty_title" : "__full_title"}`}>
                                 {
-                                    (data[info.nameState] === "")? <i className={`${info.icon} __empty_stepper`}></i> : <i className="fa-solid fa-circle-check __full_stepper"></i>
+                                    !(data[info.nameState])? <i className={`${info.icon} __empty_stepper`}></i> : <i className="fa-solid fa-circle-check __full_stepper"></i>
                                 } {info.name}
                             </Link>
                         }

@@ -1,13 +1,8 @@
 import React, { useContext } from 'react'
 import AppContext from '../../context/AppContext'
 
-const Names = ({ info }) => {
-  const { names, handleInfo } = useContext(AppContext)
-
-  const handleName = (e) => {
-    const { value, name } = e.target
-    handleInfo(value, name)
-  }
+const Names = ({ info, changeInfo }) => {
+  const { names } = useContext(AppContext)
 
   return (
     <div className='Names'>
@@ -19,7 +14,7 @@ const Names = ({ info }) => {
         value={names}
         name={info.nameState}
         placeholder={info.name}
-        onChange={handleName}
+        onChange={changeInfo}
       />
     </div>
   )

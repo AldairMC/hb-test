@@ -10,9 +10,9 @@ import AppReducer from "./AppReducer";
 const AppProvider = ({ children }) => {
     
     const initialState = {
-        names: "",
-        email: "",
-        address: "",
+        names: null,
+        email: null,
+        address: null,
         floor: null,
         perks: null
     }

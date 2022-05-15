@@ -1,7 +1,7 @@
 .Resumen {
     display: grid;
     padding: 10%;
-    grid-template-rows: repeat(6, 1fr);
+    grid-template-rows: 30% repeat(5, 1fr);
     font-family: $font_principal;
     color: $color_text_principal;
 
@@ -10,7 +10,7 @@
         align-self: center;
     }
 
-    .Span_Resumen_Name {
+    .Span_Resumen_Item {
         font-size: 20px;
         align-self: center;
 

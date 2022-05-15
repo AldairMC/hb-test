@@ -26,11 +26,15 @@
         column-gap: 5%;
 
         .Div_Info {
-            background-color: yellow;
+            border-radius: 10px;
+            box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+            background-color: $color_background;
         }
 
         .Div_Resumen {
-            background-color: aqua;
+            border-radius: 10px;
+            box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+            background-color: $color_background;
         }
     }
 
@@ -38,7 +42,9 @@
         display: grid;
         height: 150px;
         grid-template-rows: 100%;
+        border-radius: 10px;
         grid-template-columns: 100%;
-        background-color: green;
+        box-shadow: rgba(149, 157, 165, 0.1) 0px 8px 24px;
+        background-color: rgba($color_background, 0.5);
     }
 }

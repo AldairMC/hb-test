@@ -2,6 +2,8 @@ import React from 'react'
 
 // Components
 import Logo from '../components/Logo';
+import Stepper from '../components/Stepper';
+import Info from '../components/Info';
 
 const Principal = () => {
   return (
@@ -14,14 +16,14 @@ const Principal = () => {
         </div>
         <div className='Div_Info_Resumen'>
             <div className='Div_Info'>
-                From Info
+                <Info />
             </div>
             <div className='Div_Resumen'>
                 From Resumen
             </div>
         </div>
         <div className='Div_Steps'>
-            From Steps
+            <Stepper />
         </div>
     </div>
   )

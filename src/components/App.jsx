@@ -1,8 +1,11 @@
 import Principal from '../pages/Principal';
+import { BrowserRouter } from "react-router-dom"
 
 const App = () => {
   return (
-    <Principal />
+    <BrowserRouter>
+      <Principal />
+    </BrowserRouter>
   );
 }
 

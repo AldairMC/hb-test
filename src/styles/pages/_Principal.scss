@@ -35,6 +35,8 @@
         }
 
         .Div_Resumen {
+            display: grid;
+            grid-template-rows: 100%;
             border-radius: 10px;
             box-shadow: rgba($color_text_secondary, 0.2) 0px 8px 24px;
             background-color: $color_background;

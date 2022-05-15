@@ -1,0 +1,22 @@
+.Resumen {
+    display: grid;
+    padding: 10%;
+    grid-template-rows: repeat(6, 1fr);
+    font-family: $font_principal;
+    color: $color_text_principal;
+
+    .H1_Resumen_Title {
+        justify-self: center;
+        align-self: center;
+    }
+
+    .Span_Resumen_Name {
+        font-size: 20px;
+        align-self: center;
+
+        i {
+            font-size: 25px;
+            padding-right: 15px;
+        }
+    }
+}

@@ -4,6 +4,7 @@ import React from 'react'
 import Logo from '../components/Logo';
 import Stepper from '../components/Stepper';
 import Info from '../components/Info';
+import Resumen from '../components/Resumen';
 
 const Principal = () => {
   return (
@@ -19,7 +20,7 @@ const Principal = () => {
                 <Info />
             </div>
             <div className='Div_Resumen'>
-                From Resumen
+                <Resumen />
             </div>
         </div>
         <div className='Div_Steps'>

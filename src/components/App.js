@@ -1,8 +1,8 @@
+import Principal from '../pages/Principal';
+
 const App = () => {
   return (
-    <div className="App">
-      From App
-    </div>
+    <Principal />
   );
 }
 

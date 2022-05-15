@@ -1,0 +1,39 @@
+.Stepper {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+
+    .Options {
+        justify-self: center;
+        align-self: center;
+
+        .__empty_title {
+            color: $color_text_principal;
+        }
+
+        .__full_title {
+            color: green;
+        }
+
+        a {
+            text-decoration: none;
+            font-family: $font_principal;
+
+            &:hover {
+                font-weight: 600;
+            }
+
+            .__empty_stepper {
+                padding: 5px 8px;
+                font-size: 10px;
+                border-radius: 50%;
+                color: white;
+                background-color: rgba($color_text_principal, 0.5);
+                margin-right: 5px;
+            }
+
+            .__full_stepper {
+                color: green;
+            }
+        }
+    }
+}

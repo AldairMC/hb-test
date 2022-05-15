@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom';
 
 // Constants
 import { IMG_LOGO } from '../constants/constants';
@@ -6,6 +7,7 @@ import { IMG_LOGO } from '../constants/constants';
 const Logo = () => {
   return (
     <div className='Logo'>
+      <Link to={"/"}>
         <img 
             src={IMG_LOGO}
             alt="Logo" 
@@ -13,6 +15,7 @@ const Logo = () => {
             width={70}
             height={70}
         />
+      </Link>
     </div>
   )
 }

@@ -1,7 +1,7 @@
 import { useReducer } from "react";
 
 //types
-import { HANDLE_INFO } from "../constants/types";
+import { HANDLE_INFO, HANDLE_CHECKS } from "../constants/types";
 
 //Reducer and Context
 import AppContext from "./AppContext";
@@ -26,6 +26,13 @@ const AppProvider = ({ children }) => {
         })
     }
 
+    const handlePerks = (checks) => {
+        dispatch({
+            type: HANDLE_CHECKS,
+            payload: checks
+        })
+    }
+
     return (
         <AppContext.Provider
             value={{
@@ -35,7 +42,8 @@ const AppProvider = ({ children }) => {
                 address: appState.address,
                 floor: appState.floor,
                 perks: appState.perks,
-                handleInfo
+                handleInfo,
+                handlePerks
             }}
         >
             {children}

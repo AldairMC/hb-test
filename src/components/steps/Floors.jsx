@@ -1,5 +1,6 @@
 import React, { useContext } from 'react'
 import AppContext from '../../context/AppContext'
+import Pagination from '../Pagination'
 
 const Floor = ({ info, changeInfo }) => {
   const { floor } = useContext(AppContext)
@@ -17,6 +18,10 @@ const Floor = ({ info, changeInfo }) => {
         name={info.nameState}
         placeholder={info.name}
         onChange={changeInfo}
+      />
+      <Pagination 
+        prev={info.prev}
+        next={info.next}
       />
     </div>
   )

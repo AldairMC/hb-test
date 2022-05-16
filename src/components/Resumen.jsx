@@ -1,8 +1,9 @@
 import React, { useContext } from 'react'
 import AppContext from '../context/AppContext';
+import { stylePerksName } from "../utils/helper";
 
 const Resumen = () => {
-    const { names, email, address, floor } = useContext(AppContext)
+    const { names, email, address, floor, perks } = useContext(AppContext)
 
     return (
         <div className='Resumen'>
@@ -32,6 +33,18 @@ const Resumen = () => {
                 {
                     (floor)? <>
                         <i className="fa-solid fa-hotel"></i> Piso: {floor}
+                    </> : <></>
+                }
+            </span>
+            <span className='Span_Resumen_Item'>
+                {
+                    (perks)? <>
+                        <h4 className='H5_Resumen_Item'>Beneficios</h4>
+                        {
+                            perks.map(i => (
+                                <div className='Span_Resumen_Perks'><i className="fa-regular fa-circle-dot"></i> {stylePerksName(i.name)}</div>
+                            ))
+                        }
                     </> : <></>
                 }
             </span>

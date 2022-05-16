@@ -1,0 +1,41 @@
+.Pagination {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    font-size: 18px;
+
+    .__Prev {
+        justify-self: flex-start;
+        align-self: flex-end;
+
+        a {
+            text-decoration: none;
+            color: rgba($color_text_principal, 0.5);
+
+            &:hover {
+                color: $color_text_principal;
+            }
+
+            i {
+                padding-right: 10px;
+            }
+        }
+    }
+
+    .__Next {
+        justify-self: flex-end;
+        align-self: flex-end;
+
+        a {
+            text-decoration: none;
+            color: rgba($color_text_principal, 0.5);
+
+            &:hover {
+                color: $color_text_principal;
+            }
+
+            i {
+                padding-left: 10px;
+            }
+        }
+    }
+}

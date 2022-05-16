@@ -3,7 +3,7 @@ import AppContext from '../context/AppContext'
 import { Routes, Route } from "react-router-dom";
 import { Paths } from "../constants/paths";
 
-import { validNumber } from "../utils/helpes";
+import { validNumber } from "../utils/helper";
 
 const Info = () => {
     const { handleInfo } = useContext(AppContext)
@@ -16,13 +16,14 @@ const Info = () => {
         } else {
             handleInfo(value, name)
         }
-    }
+    } 
     
     return (
         <Routes>
             {
-                Paths.map(info => (
-                    <Route 
+                Paths.map((info, key) => (
+                    <Route
+                        key={key}
                         path={info.path}
                         element={
                             <info.component 

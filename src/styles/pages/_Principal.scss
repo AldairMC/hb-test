@@ -15,7 +15,30 @@
         grid-template-columns: repeat(2, 1fr);
 
         .Div_Modal {
-            background-color: blue;
+            display: grid;
+            grid-template-columns: 100%;
+            
+            i {
+                display: none;
+                justify-self: flex-end;
+                position: fixed;
+                align-self: flex-start;
+                font-size: 25px;
+                color: $color_background;
+                background-color: rgba($color_text_principal, 0.8);
+                padding: 10px 14px;
+                border-radius: 50%;
+                cursor: pointer;
+
+                &:hover {
+                    background-color: $color_text_principal;
+                }
+
+                @media (max-width: 786px) {
+                    display: block;
+                }
+            }
+
         }
     }
 

@@ -12,7 +12,7 @@ const Principal = () => {
         <div className='Div_Navbar'>
             <Logo />
             <div className='Div_Modal'>
-                From Modal Active
+                <i className="fa-solid fa-file"></i>
             </div>
         </div>
         <div className='Div_Info_Resumen'>

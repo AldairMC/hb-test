@@ -11,7 +11,7 @@
         }
 
         .__full_title {
-            color: green;
+            color: $color_checks;
         }
 
         a {
@@ -26,13 +26,13 @@
                 padding: 5px 8px;
                 font-size: 10px;
                 border-radius: 50%;
-                color: white;
+                color: $color_background;
                 background-color: rgba($color_text_principal, 0.5);
                 margin-right: 5px;
             }
 
             .__full_stepper {
-                color: green;
+                color: $color_checks;
             }
         }
     }

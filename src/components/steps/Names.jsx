@@ -1,6 +1,8 @@
 import React, { useContext } from 'react'
 import AppContext from '../../context/AppContext'
 
+import Pagination from '../Pagination'
+
 const Names = ({ info, changeInfo }) => {
   const { names } = useContext(AppContext)
 
@@ -15,6 +17,10 @@ const Names = ({ info, changeInfo }) => {
         name={info.nameState}
         placeholder={info.name}
         onChange={changeInfo}
+      />
+      <Pagination 
+        prev={info.prev}
+        next={info.next}
       />
     </div>
   )

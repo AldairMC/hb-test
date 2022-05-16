@@ -8,3 +8,8 @@ export const validNumber = (value) => {
         return convertNumber
     }
 }
+
+export const stylePerksName = (name) => {
+    const delete_under = name.replace(/_/g, " ")
+    return delete_under.charAt(0).toUpperCase() + delete_under.slice(1)
+}

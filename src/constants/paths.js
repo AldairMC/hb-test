@@ -23,54 +23,64 @@ export const Paths = [
         visible: false
     },
     {
-        path: "nombre-completo",
+        path: "/nombre-completo",
         component: Names,
         name: "Nombre Completo",
         nameState: "names",
         code: "Paso 1",
         visible: true,
         descripcion: "Agrege su nombre completo sin espacios en el campo nombre completo, Ej: Richard Hendricks.",
-        icon: "fa-solid fa-1"
+        icon: "fa-solid fa-1",
+        next: "/email",
+        prev: null
     },
     {
-        path: "email",
+        path: "/email",
         component: Email,
         name: "Email",
         nameState: "email",
         code: "Paso 2",
         visible: true,
         descripcion: "Agrege su email valido en el campo email, Ej: example@correo.com",
-        icon: "fa-solid fa-2"
+        icon: "fa-solid fa-2",
+        next: "/direccion-apartamento",
+        prev: "/nombre-completo"
     },
     {
-        path: "direccion-apartamento",
+        path: "/direccion-apartamento",
         component: Address,
         name: "Dirección del apartamento",
         code: "Paso 3",
         nameState: "address",
         visible: true,
         descripcion: "Agrege su dirrecion completa en el campo direccion, Ej: Carrera 50 #34-124, Apto 1209",
-        icon: "fa-solid fa-3"
+        icon: "fa-solid fa-3",
+        next: "/numero-pisos",
+        prev: "/email"
     },
     {
-        path: "numero-pisos",
+        path: "/numero-pisos",
         component: Floors,
         name: "Número del piso",
         code: "Paso 4",
         nameState: "floor",
         visible: true,
         descripcion: "Defina el número del piso en la que requiere en inmueble, Ej: Piso 12",
-        icon: "fa-solid fa-4"
+        icon: "fa-solid fa-4",
+        next: "/beneficios",
+        prev: "/direccion-apartamento"
 
     },
     {
-        path: "beneficios",
+        path: "/beneficios",
         component: Checks,
         name: "Beneficios",
         code: "Paso 5",
         nameState: "perks",
         visible: true,
-        descripcion: "Agrege los beneficios que requiera del inmueble, Ej: Zona BBQ, Sálon comunal, parques de juegos.",
-        icon: "fa-solid fa-5"
+        descripcion: "Agrege los beneficios que requiera del inmueble, Ej: Zona BBQ, Sálon comunal, Parques de juegos.",
+        icon: "fa-solid fa-5",
+        next: null,
+        prev: "/numero-pisos"
     },
 ]

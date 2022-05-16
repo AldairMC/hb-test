@@ -1,5 +1,6 @@
 import React, { useContext } from 'react'
 import AppContext from '../../context/AppContext'
+import Pagination from '../Pagination'
 
 const Email = ({ info, changeInfo }) => {
   const { email } = useContext(AppContext)
@@ -15,6 +16,10 @@ const Email = ({ info, changeInfo }) => {
         name={info.nameState}
         placeholder={info.name}
         onChange={changeInfo}
+      />
+      <Pagination 
+        prev={info.prev}
+        next={info.next}
       />
     </div>
   )

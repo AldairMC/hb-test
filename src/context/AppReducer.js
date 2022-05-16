@@ -1,4 +1,4 @@
-import { HANDLE_INFO, HANDLE_CHECKS, MODAL_ACTIVED } from "../constants/types";
+import { HANDLE_INFO, HANDLE_CHECKS, MODAL_ACTIVED, VALID_EMAIL } from "../constants/types";
 
 const AppReducer = (state, action) => {
     const { type, payload } = action
@@ -18,6 +18,11 @@ const AppReducer = (state, action) => {
             return {
                 ...state, 
                 isOpen: payload
+            }
+        case VALID_EMAIL:
+            return {
+                ...state, 
+                isValid: payload
             }
         default:
             return state;

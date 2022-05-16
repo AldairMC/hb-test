@@ -14,20 +14,27 @@
         font-size: 15px;
         align-self: center;
         font-style: italic;
-    }
 
-    .Input_Email_Value {
-        border: none;
-        align-self: center;
-        font-size: 18px;
-        background-color: $color_background;
-        box-shadow: none;
-        border-bottom: 1px solid rgba($color_text_secondary, 0.5);
-        padding-bottom: 10px;
-        width: 60%;
-        
-        &:focus {
-            outline: none;
+    }
+    
+    .Div_Email_Container_Input {
+        h6 {
+            color: $color_email;
+        }
+
+        .Input_Email_Value {
+            border: none;
+            align-self: center;
+            font-size: 18px;
+            background-color: $color_background;
+            box-shadow: none;
+            border-bottom: 1px solid rgba($color_text_secondary, 0.5);
+            padding-bottom: 10px;
+            width: 60%;
+            
+            &:focus {
+                outline: none;
+            }
         }
     }
 }

@@ -29,31 +29,34 @@ const Checks = ({ info }) => {
       <p className='P_Checks_Description'>{info.descripcion}</p>
       <div className='Div_Check_Container'>
         <div className='Div_Check'>
-          <input 
+          <input
+            id="zona_bbq"
             className='Input_Check' 
             type="checkbox" 
             name="perks" 
             value="zona_bbq" 
           />
-          <label>Zona BBQ</label>
+          <label for="zona_bbq">Zona BBQ</label>
         </div>
         <div className='Div_Check'>
-          <input 
+          <input
+            id="salon_comunal"
             className='Input_Check' 
             type="checkbox" 
             name="perks" 
             value="salon_comunal"
           />
-          <label>Sálon comunal</label>
+          <label for="salon_comunal">Sálon comunal</label>
         </div>
         <div className='Div_Check'>
-          <input 
+          <input
+            id="parques_de_juegos"
             className='Input_Check' 
             type="checkbox" 
             name="perks" 
             value="parques_de_juegos"
           />
-          <label>Parque de juegos</label>
+          <label for="parques_de_juegos">Parque de juegos</label>
         </div>
         <button className='Button_Checks' onClick={handleChecks}>
           <i className="fa-solid fa-plus"></i> Valid

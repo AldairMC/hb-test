@@ -2,7 +2,7 @@ import React, { useContext } from 'react'
 import AppContext from '../context/AppContext';
 
 const Resumen = () => {
-    const { names, email } = useContext(AppContext)
+    const { names, email, address, floor } = useContext(AppContext)
 
     return (
         <div className='Resumen'>
@@ -17,7 +17,21 @@ const Resumen = () => {
             <span className='Span_Resumen_Item'>
                 {
                     (email)? <>
-                        <i class="fa-solid fa-at"></i> {email}
+                        <i className="fa-solid fa-at"></i> {email}
+                    </> : <></>
+                }
+            </span>
+            <span className='Span_Resumen_Item'>
+                {
+                    (address)? <>
+                        <i className="fa-solid fa-map-location-dot"></i> {address}
+                    </> : <></>
+                }
+            </span>
+            <span className='Span_Resumen_Item'>
+                {
+                    (floor)? <>
+                        <i className="fa-solid fa-hotel"></i> Piso: {floor}
                     </> : <></>
                 }
             </span>

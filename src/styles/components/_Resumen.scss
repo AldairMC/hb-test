@@ -1,7 +1,7 @@
 .Resumen {
     display: grid;
     padding: 10%;
-    grid-template-rows: 30% repeat(5, 1fr);
+    grid-template-rows: 20% repeat(4, 1fr) 30%;
     font-family: $font_principal;
     color: $color_text_principal;
 

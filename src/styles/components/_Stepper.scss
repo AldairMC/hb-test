@@ -34,6 +34,11 @@
             .__full_stepper {
                 color: $color_checks;
             }
+
+            .Span_Stepper_Name {
+                color: $color_icon;
+                font-weight: 600;
+            }
         }
     }
 }

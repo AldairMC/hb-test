@@ -1,0 +1,27 @@
+.Modal {
+    display: block;
+    background-color: rgba($color_text_principal, 0.8);
+    z-index: 2;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+
+    .Div_Modal_Close {
+        text-align: end;
+        font-size: 20px;
+        padding-right: 10px;
+        cursor: pointer;
+        color: $color_text_principal;
+    }
+
+    .Div_Modal_Contenido {
+        border-radius: 5px;
+        background-color: $color_background;
+        width: 50%;
+        padding: 20px;
+        margin: 10% auto;
+        position: relative;
+    }
+}

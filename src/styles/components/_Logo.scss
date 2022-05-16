@@ -3,9 +3,11 @@
     grid-template-columns: 100%;
     cursor: pointer;
 
-    .Img_Logo {
-        justify-self: flex-start;
+    a {
         align-self: center;
-        padding-left: 20px;
+
+        .Img_Logo {
+            padding-left: 20px;
+        }
     }
 }

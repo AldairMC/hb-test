@@ -18,11 +18,11 @@
             display: grid;
             grid-template-columns: 100%;
             
-            i {
+            .I_Modal_Button {
                 display: none;
                 justify-self: flex-end;
                 position: fixed;
-                align-self: flex-start;
+                align-self: center;
                 font-size: 25px;
                 color: $color_background;
                 background-color: rgba($color_text_principal, 0.8);
@@ -63,6 +63,14 @@
             border-radius: 10px;
             box-shadow: rgba($color_text_secondary, 0.2) 0px 8px 24px;
             background-color: $color_background;
+
+            @media (max-width: 786px) {
+                display: none;
+            }
+        }
+
+        @media (max-width: 786px) {
+            grid-template-columns: 100%;
         }
     }
 

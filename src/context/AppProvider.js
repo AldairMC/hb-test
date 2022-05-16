@@ -1,7 +1,7 @@
 import { useReducer } from "react";
 
 //types
-import { HANDLE_INFO, HANDLE_CHECKS } from "../constants/types";
+import { HANDLE_INFO, HANDLE_CHECKS, MODAL_ACTIVED } from "../constants/types";
 
 //Reducer and Context
 import AppContext from "./AppContext";
@@ -14,7 +14,8 @@ const AppProvider = ({ children }) => {
         email: null,
         address: null,
         floor: null,
-        perks: null
+        perks: null, 
+        isOpen: false
     }
 
     const [ appState, dispatch ] = useReducer(AppReducer, initialState)
@@ -33,6 +34,13 @@ const AppProvider = ({ children }) => {
         })
     }
 
+    const handleModalActived = (state) => {
+        dispatch({
+            type: MODAL_ACTIVED,
+            payload: state
+        })
+    }
+
     return (
         <AppContext.Provider
             value={{
@@ -42,8 +50,10 @@ const AppProvider = ({ children }) => {
                 address: appState.address,
                 floor: appState.floor,
                 perks: appState.perks,
+                isOpen: appState.isOpen,
                 handleInfo,
-                handlePerks
+                handlePerks,
+                handleModalActived
             }}
         >
             {children}

@@ -18,7 +18,7 @@ export const Paths = [
         prev: null
     },
     {
-        path: "*",
+        path: "/*",
         component: NoFound,
         name: "404",
         code: null,

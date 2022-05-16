@@ -3,7 +3,7 @@ import AppContext from '../../context/AppContext'
 import Pagination from '../Pagination'
 
 const Checks = ({ info }) => {
-  const {  handlePerks } = useContext(AppContext)
+  const { handlePerks } = useContext(AppContext)
 
   const handleChecks = (e) => {
     const checks = document.getElementsByName("perks")
@@ -24,7 +24,7 @@ const Checks = ({ info }) => {
   }
 
   return (
-    <div className='Checks'>
+    <div className='Checks' data-testid="perks">
       <h1 className='H1_Checks_Title'>{info.code}</h1>
       <p className='P_Checks_Description'>{info.descripcion}</p>
       <div className='Div_Check_Container'>
@@ -36,7 +36,7 @@ const Checks = ({ info }) => {
             name="perks" 
             value="zona_bbq" 
           />
-          <label for="zona_bbq">Zona BBQ</label>
+          <label htmlFor="zona_bbq">Zona BBQ</label>
         </div>
         <div className='Div_Check'>
           <input
@@ -46,7 +46,7 @@ const Checks = ({ info }) => {
             name="perks" 
             value="salon_comunal"
           />
-          <label for="salon_comunal">Sálon comunal</label>
+          <label htmlFor="salon_comunal">Sálon comunal</label>
         </div>
         <div className='Div_Check'>
           <input
@@ -56,10 +56,10 @@ const Checks = ({ info }) => {
             name="perks" 
             value="parques_de_juegos"
           />
-          <label for="parques_de_juegos">Parque de juegos</label>
+          <label htmlFor="parques_de_juegos">Parque de juegos</label>
         </div>
         <button className='Button_Checks' onClick={handleChecks}>
-          <i className="fa-solid fa-plus"></i> Valid
+          <i className="fa-solid fa-plus"></i> Add
         </button>
       </div>
       <Pagination 

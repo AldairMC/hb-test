@@ -6,7 +6,7 @@ const Email = ({ info, changeInfo }) => {
   const { email, isValid } = useContext(AppContext)
 
   return (
-    <div className='Email'>
+    <div className='Email' data-testid="email">
       <h1 className='H1_Email_Title'>{info.code}</h1>
       <p className='P_Email_Description'>{info.descripcion}</p>
       <div className='Div_Email_Container_Input'>

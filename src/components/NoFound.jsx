@@ -4,7 +4,7 @@ import Pagination from './Pagination';
 
 const NoFound = ({ info }) => {
   return (
-    <div className='NoFound'>
+    <div className='NoFound' data-testid="nofound">
       <div className='Div_NoFound'>
         <img 
           className='Img_NoFound' 

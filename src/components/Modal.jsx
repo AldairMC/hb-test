@@ -6,7 +6,7 @@ const Modal = () => {
     const { isOpen, handleModalActived } = useContext(AppContext)
 
     return isOpen? (
-        <div className='Modal'>
+        <div className='Modal' data-testid="modal">
             <div className='Div_Modal_Contenido'>
                 <div className='Div_Modal_Close'>
                     <span onClick={() => handleModalActived(!isOpen)}>X</span>

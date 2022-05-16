@@ -3,7 +3,7 @@ import Pagination from './Pagination';
 
 const Description = ({ info }) => {
   return (
-    <div className='Description'>
+    <div className='Description' data-testid="description">
       <div className='Div_Description_Title'>
         Instrucciones
       </div>

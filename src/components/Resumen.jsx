@@ -6,7 +6,7 @@ const Resumen = () => {
     const { names, email, address, floor, perks } = useContext(AppContext)
 
     return (
-        <div className='Resumen'>
+        <div className='Resumen' data-testid="resumen">
             <h1 className='H1_Resumen_Title'>Resumen</h1>
             <span className='Span_Resumen_Item'>
                 {

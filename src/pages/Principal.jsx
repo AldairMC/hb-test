@@ -12,7 +12,7 @@ const Principal = () => {
     const { isOpen, handleModalActived } = useContext(AppContext)
 
     return (
-        <div className='Div_Principal'>
+        <div className='Div_Principal' data-testid="principal">
             <div className='Div_Navbar'>
                 <Logo />
                 <div className='Div_Modal'>

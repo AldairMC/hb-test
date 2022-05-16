@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 
 const Pagination = ({ next, prev }) => {
   return (
-    <div className='Pagination'>
+    <div className='Pagination' data-testid="pagination">
         {
             (prev)? <div className='__Prev'><Link to={prev}><i className="fa-solid fa-angle-left"></i> {"Prev"}</Link></div> : <div></div>
         }

@@ -7,13 +7,13 @@ const Names = ({ info, changeInfo }) => {
   const { names } = useContext(AppContext)
 
   return (
-    <div className='Names'>
+    <div className='Names' data-testid="names">
       <h1 className='H1_Names_Title'>{info.code}</h1>
       <p className='P_Names_Description'>{info.descripcion}</p>
       <input 
         type="text"
         className='Input_Names_Value'
-        value={names}
+        value={names || ""}
         name={info.nameState}
         placeholder={info.name}
         onChange={changeInfo}

@@ -13,14 +13,18 @@ export const Paths = [
         component: Description,
         name: "Descripción",
         code: null,
-        visible: false
+        visible: false,
+        next: "/nombre-completo",
+        prev: null
     },
     {
         path: "*",
         component: NoFound,
         name: "404",
         code: null,
-        visible: false
+        visible: false,
+        next: "/nombre-completo",
+        prev: null
     },
     {
         path: "/nombre-completo",

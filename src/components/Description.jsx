@@ -1,6 +1,7 @@
 import React from 'react'
+import Pagination from './Pagination';
 
-const Description = () => {
+const Description = ({ info }) => {
   return (
     <div className='Description'>
       <div className='Div_Description_Title'>
@@ -15,6 +16,10 @@ const Description = () => {
       <div className='Div_Description_Text'>
         Al final para validar los datos se debe hacer click en el botón <strong>Validar</strong>, la cual se encuentra en la parte inferior derecha de la sección de resumen.
       </div>
+      <Pagination 
+        prev={info.prev}
+        next={info.next}
+      />
     </div>
   )
 }

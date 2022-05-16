@@ -1,8 +1,9 @@
 import React, { useContext, useState } from 'react'
 import AppContext from '../context/AppContext'
-import { Link } from 'react-router-dom'
 
 import { Paths } from '../constants/paths'
+
+import Options from './Options'
 
 const Stepper = () => {
     const initialState = {
@@ -26,17 +27,16 @@ const Stepper = () => {
     }
     
     return (
-        <div className='Stepper'>
+        <div className='Stepper' data-testid="stepper">
             {
-                Links.map((info) => (
-                    <div className='Options'>
-                        {
-                            <Link to={info.path} className={`${!(data[info.nameState])?"__empty_title" : "__full_title"}`}>
-                                {
-                                    !(data[info.nameState])? <i className={`${info.icon} __empty_stepper`}></i> : <i className="fa-solid fa-circle-check __full_stepper"></i>
-                                } <span onClick={() => handlePatActive(info.path)} className={`${pathActived[info.path]? "Span_Stepper_Name" : ""}`}>{info.name}</span>
-                            </Link>
-                        }
+                Links.map((info, key) => (
+                    <div className='Options' key={key}>
+                        <Options 
+                            info={info} 
+                            handlePatActive={handlePatActive}
+                            data={data}
+                            pathActived={pathActived}
+                        />
                     </div>
                 ))
             }

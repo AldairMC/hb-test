@@ -34,7 +34,7 @@
                     background-color: $color_text_principal;
                 }
 
-                @media (max-width: 786px) {
+                @media (max-width: $screen_laptop_l) {
                     display: block;
                 }
             }
@@ -64,12 +64,12 @@
             box-shadow: rgba($color_text_secondary, 0.2) 0px 8px 24px;
             background-color: $color_background;
 
-            @media (max-width: 786px) {
+            @media (max-width: $screen_laptop_l) {
                 display: none;
             }
         }
 
-        @media (max-width: 786px) {
+        @media (max-width: $screen_laptop_l) {
             grid-template-columns: 100%;
         }
     }

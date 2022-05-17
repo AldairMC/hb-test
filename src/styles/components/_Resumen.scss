@@ -1,3 +1,5 @@
+@import "../globals/Globals";
+
 .Resumen {
     display: grid;
     padding: 10%;
@@ -26,6 +28,34 @@
 
         .Span_Resumen_Perks {
             padding-right: 5px;
+
+            i {
+                font-size: 15px;
+            }
+        }
+    }
+
+    @media (max-width: $screen_tablet) {
+        .Resumen {
+            padding: 5%;
+        }
+
+        .H1_Resumen_Title {
+            font-size: 25px;
+        }
+
+        .Span_Resumen_Item {
+            font-size: 18px;
+
+            i {
+                font-size: 18px;
+            }
+        }
+    }
+
+    @media (max-width: $screen_mobile_m) {
+        .Span_Resumen_Item {
+            font-size: 15px;
 
             i {
                 font-size: 15px;

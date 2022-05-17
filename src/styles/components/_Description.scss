@@ -2,7 +2,7 @@
 
 .Description {
     display: grid;
-    grid-template-rows: repeat(5, 1fr);
+    grid-template-rows: 20% 20% 50% 10%;
     font-family: $font_principal;
 
     .Div_Description_Title {

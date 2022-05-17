@@ -69,7 +69,7 @@ export const Paths = [
         code: "Paso 4",
         nameState: "floor",
         visible: true,
-        descripcion: "Defina el número del piso en la que requiere en inmueble, Ej: Piso 12",
+        descripcion: "Defina el número del piso en la que requiere en inmueble, Ej: Piso 12, (Nota: El máximo número del piso está limitado a 50)",
         icon: "fa-solid fa-4",
         next: "/beneficios",
         prev: "/direccion-apartamento"

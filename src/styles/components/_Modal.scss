@@ -1,3 +1,5 @@
+@import "../globals/Globals";
+
 .Modal {
     display: block;
     background-color: rgba($color_text_principal, 0.8);
@@ -23,5 +25,13 @@
         padding: 20px;
         margin: 10% auto;
         position: relative;
+
+        @media (max-width: $screen_tablet) {
+            width: 70%;
+        }
+
+        @media (max-width: $screen_mobile_l) {
+            width: 80%;
+        }
     }
 }

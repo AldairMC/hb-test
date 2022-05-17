@@ -4,7 +4,7 @@
     display: grid;
     grid-template-rows: 10% 60% 30%;
     row-gap: 25px;
-    margin: 50px 10% 0 10%;
+    margin: 50px 10% 30px 10%;
     position: sticky;
     top: 0;
     height: 100vh;
@@ -55,6 +55,10 @@
             padding: 10%;
             box-shadow: rgba($color_text_secondary, 0.2) 0px 8px 24px;
             background-color: $color_background;
+
+            @media (max-width: $screen_laptop_l) {
+                padding: 5%;
+            }
         }
 
         .Div_Resumen {

@@ -5,13 +5,26 @@
     grid-template-rows: 20% 20% 50% 10%;
     font-family: $font_principal;
 
+    @media (max-width: $screen_tablet) {
+        grid-template-rows: 10% 30% 55% 5%;
+    }
+
     .Div_Description_Title {
         font-size: 25px;
+
+        @media (max-width: $screen_mobile_l) {
+            font-size: 20px;
+        }
     }
 
     .Div_Description_Text {
-        justify-self: center;
+        justify-self: flex-start;
         align-self: center;
         font-size: 16px;
+
+        @media (max-width: $screen_mobile_l) {
+            font-size: 14px;
+            align-self: flex-start;
+        }
     }
 }
